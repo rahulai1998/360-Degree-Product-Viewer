@@ -15,7 +15,7 @@ function vue360(id, n, p, t, playable, autoPlay, draggable, mouseMove, buttons, 
         for (var k = 1; k <= n; k++) {
             document.getElementById('dummy').innerHTML += `<img src='${p}${k}.${t}'>`;
         }
-
+        document.getElementById('dummy').style="display:none";
     var img = document.querySelector(`#${id} .${id}`);
 
     if (!playable && !autoPlay) {
