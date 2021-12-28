@@ -7,7 +7,7 @@ function vue360(id, n, p, t, playable, autoPlay, draggable, mouseMove, buttons, 
     var i = 1, j = 0, move = [],
         mainDiv = document.querySelector(`#${id}`);
     mainDiv.className = 'viewer';
-    mainDiv.innerHTML += `<img class="${id} ${playable ? 'playable ' : ''}${autoPlay ? 'autoPlay ' : ''}${draggable ? 'draggable ' : ''}${mouseMove ? 'mouseMove ' : ''}${buttons ? 'buttons ' : ''}${keys ? 'keys ' : ''}${scroll ? 'scroll ' : ''}" draggable="false" src='${p}${i}.${t}'>`;
+    mainDiv.innerHTML += `<img height="300"; width="300"; class="${id} ${playable ? 'playable ' : ''}${autoPlay ? 'autoPlay ' : ''}${draggable ? 'draggable ' : ''}${mouseMove ? 'mouseMove ' : ''}${buttons ? 'buttons ' : ''}${keys ? 'keys ' : ''}${scroll ? 'scroll ' : ''}" draggable="false" src='${p}${i}.${t}'>`;
     mainDiv.innerHTML +=
            '<div class="loader"><div class="three-bounce"><div class="one"></div><div class="two"></div><div class="three"></div></div></div>'
 
