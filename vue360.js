@@ -12,9 +12,9 @@ function vue360(id, n, p, t, playable, autoPlay, draggable, mouseMove, buttons, 
            '<div class="loader"><div class="three-bounce"><div class="one"></div><div class="two"></div><div class="three"></div></div></div>'
 
     if (call == 1)
-        //for (var k = 1; k <= n; k++) {
-        //    document.getElementById('dummy').innerHTML += `<img src='${p}${k}.${t}'>`;
-        //}
+        for (var k = 1; k <= n; k++) {
+            document.getElementById('dummy').innerHTML += `<img src='${p}${k}.${t}'>`;
+        }
 
     var img = document.querySelector(`#${id} .${id}`);
 
