@@ -7,16 +7,19 @@
     <script src="vue360.js"></script>
     <script>
     
-    </script>
+    </script>	
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
-    <h1>360 Degree Product Viewer</h1>
-    <h4>
-        <em>(Using Plain JavaScript)</em>
-    </h4>
-    <br />
     <div id="pdtViewer">
-        <h3>Playable(controls) with Touch and Mouse</h3>
+	<h1>Interactive (3d model)<h1>
+	<model-viewer alt="Ring" src="./3d/ring.gltf" ar ar-modes="webxr scene-viewer quick-look" poster="./3d/ring.jpeg" seamless-poster shadow-intensity="1" camera-controls></model-viewer>
+	<br />
+   
+	<h1>360 Degree Product Viewer Image Basse</h1>
+        <h3>Autoplay 360 (image)</h3>
+        <div id="auto"></div>
+		<h3>Mouse and touch (360 images sample) </h3>
         <div id="ring"></div>
 		<div id="dummy"></div>
     </div>
@@ -28,7 +31,7 @@
 		vue360('ring', 360, path, 'jpg', false, false, true, false, false, true, true);    //playable autoPlay
         //pdt360DegViewer('car0', 51, path, 'png', true, true, false, false, false, false, false);    //playable autoPlay
         //pdt360DegViewer('car1', 51, path, 'png', true, false, false, false, false, false, false);   //playable
-        //pdt360DegViewer('car2', 51, path, 'png', false, true, false, false, false, false, false);   //autoPlay
+        vue360('auto', 360, path, 'jpg', false, true, false, false, false, false, false);   //autoPlay
         //pdt360DegViewer('ring', 360, path, 'jpg', false, false, true, false, false, false, false);   //draggable
         //pdt360DegViewer('car4', 51, path, 'png', false, false, false, true, false, false, false);   //mouseMove
         //pdt360DegViewer('car5', 51, path, 'png', false, false, false, false, true, false, false);   //buttonNavigation
