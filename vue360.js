@@ -125,7 +125,7 @@ function vue360(id, n, p, t, playable, autoPlay, draggable, mouseMove, buttons, 
             pause = false,
             left = false,
             right = false,
-            speed = 50;
+            speed = 80;
 
         if (playable) {
             var btnDiv = document.createElement('div');
@@ -156,7 +156,7 @@ function vue360(id, n, p, t, playable, autoPlay, draggable, mouseMove, buttons, 
 
             stopBtn.addEventListener('click', function () {
                 pause = true;
-                speed = 50;
+                speed = 80;
                 right = true;
                 left = false;
                 this.parentNode.parentNode.querySelector('img').src = `${p}${i = 1}.${t}`;
